@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table2</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="conteiner">
+    <table class="width-90">
+      <caption>друга таблиця батьківська</caption>
+      <tr>
+        <td class="width-40" colspan="2">1-2</td>
+        <!-- 2 -->
+        <td class="width-60">3</td>
+      </tr>
+      <tr>
+        <td class="width-28">4</td>
+        <!-- 5-6 на місці вкладеної-->
+        <td colspan="2" rowspan="2">
+          <table class="width-80">
+            <caption>друга таблиця вкладена</caption>
+            <tr>
+              <td>1</td>
+              <td rowspan="3">2-5-8</td>
+              <td class="height-200" rowspan="2">3-6</td>
+            </tr>
+            <tr>
+              <td class="height-200" rowspan="2">4-7</td>
+            </tr>
+            <tr>
+              <td>9</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="width-28">7</td>
+        <!-- 8-9 на місці вкладеної -->
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
